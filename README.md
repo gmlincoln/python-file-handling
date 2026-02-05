@@ -60,3 +60,46 @@ with open("2026/02/05/shoishob.png", "w") as pngFile:
     pngFile.write("")
 
 ```
+
+## 🗜️ 5. Create a ZIP Archive of a Folder
+
+```python
+import shutil
+
+shutil.make_archive("2026_archive", "zip", "2026")
+
+```
+
+## 📦 6. Extract ZIP File
+
+```python
+import zipfile
+
+with zipfile.ZipFile("2026_archive.zip", "r") as zip_ref:
+    zip_ref.extractall("extracted_folder")
+
+```
+
+## 📊 7. Write Data to CSV File
+
+```python
+import csv
+
+rows = [
+    ["ID", "Name", "CGPA"],
+    [1, "Shoishob", 3.00],
+    [2, "Tanvir", 2.85],
+    [3, "Omin", 3.50],
+    [4, "Fahim", 3.75],
+    [5, "Ipshita", 3.52],
+    [6, "Neha", 3.47],
+    [7, "Bithi", 2.73],
+    [8, "Mahmuda", 3.46],
+    [9, "Lincoln", 00.00]
+]
+
+with open('students.csv', "w", newline="") as myCSV:
+    writer = csv.writer(myCSV)
+    writer.writerows(rows)
+
+```
