@@ -103,3 +103,14 @@ with open('students.csv', "w", newline="") as myCSV:
     writer.writerows(rows)
 
 ```
+## 📖 8. Read Data from CSV File
+
+```python
+
+with open("students.csv", "r") as csv_file:
+    reader = csv.reader(csv_file)
+
+    for r in reader:
+        print(r)
+
+```
