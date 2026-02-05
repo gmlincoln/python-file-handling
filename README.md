@@ -33,3 +33,30 @@ with open("python02.txt", "w") as myFile:
 with open("python02.txt", "r") as myFile:
     content = myFile.read()
     print(content)
+```
+
+## 🗂️ 2. Rename and Delete a File
+
+```python
+import os
+
+os.rename("python02.txt", "python.txt")
+os.remove("python.txt")
+```
+
+## 📁 3. Create Nested Directories
+
+```python
+os.makedirs("2026/02/05", exist_ok=True)
+os.makedirs("2026/02/04", exist_ok=True)
+
+```
+
+
+
+## 🖼️ 4. Create an Empty File Inside Folder
+```python
+with open("2026/02/05/shoishob.png", "w") as pngFile:
+    pngFile.write("")
+
+```
