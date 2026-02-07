@@ -1,4 +1,4 @@
-# 📁 Python File Handling, OS Operations, ZIP & CSV Management
+# 📁 Python File Handling, OS Operations, ZIP & CSV Management, Error Handling
 
 This project is a practical demonstration of **Python file handling** and working with important built-in modules such as `os`, `shutil`, `zipfile`, and `csv`.
 
@@ -112,5 +112,47 @@ with open("students.csv", "r") as csv_file:
 
     for r in reader:
         print(r)
+
+```
+# Error Handling in Python (File Reading)
+
+## 📌 Overview
+This project demonstrates how to handle errors while reading a file in Python using `try`, `except`, and `finally` blocks.  
+It safely attempts to read a file and prevents the program from crashing if something goes wrong.
+
+---
+
+## 🧠 Purpose of Error Handling
+Error handling is used to:
+- Prevent runtime crashes
+- Handle missing or inaccessible files
+- Ensure important messages or cleanup code always runs
+
+---
+
+## 🧾 Code Explanation
+
+### 🔹 try block
+```python
+try:
+    with open("file_name.txt", "r") as file:
+        content = file.read()
+    
+        print(content)
+
+except Exception as e:
+    # print(f"Error type: {e}")
+    pass
+    
+finally:
+    print("Something went Wrong! Try again later.")
+
+```
+
+
+
+
+
+
 
 ```
