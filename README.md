@@ -21,6 +21,9 @@ This project is ideal for beginners to understand real-world file and directory 
 | `shutil`  | Creating ZIP archive                        |
 | `zipfile` | Extracting ZIP files                        |
 | `csv`     | Writing and reading CSV files               |
+| `math`    |   Mathematical calculations               |
+| `random`  |   Random number generation               |
+| `datetime`|   Date and time operations               |
 
 ---
 
@@ -129,6 +132,44 @@ Error handling is used to:
 - Ensure important messages or cleanup code always runs
 
 ---
+
+## 9 Math Module
+### What is the Math Module?
+-  The math module provides mathematical functions and constants such as:
+
+``` 
+Square root
+Power
+Pi value
+Trigonometric functions
+Rounding operations
+
+```
+#### Example
+
+```python 
+import math
+
+print(math.sqrt(25))
+print(math.pi)
+print(math.ceil(4.2))
+print(math.floor(4.9))
+```
+```
+```cmd
+Output
+5.0
+3.141592653589793
+5
+4
+```
+####  Explanation
+Function	Description
+math.sqrt(x)	Returns the square root of x
+math.pi	Returns the value of π
+math.ceil(x)	Rounds up to the nearest integer
+math.floor(x)	Rounds down to the nearest integer
+
 
 ## 🧾 Code Explanation
 
