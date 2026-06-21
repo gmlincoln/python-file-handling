@@ -121,7 +121,7 @@ with open("students.csv", "r") as csv_file:
 
 ---
 
-## 9 Math Module
+## 9. Math Module
 ### What is the Math Module?
 -  The math module provides mathematical functions and constants such as:
 
@@ -162,7 +162,7 @@ math.pi	Returns the value of π
 math.ceil(x)	Rounds up to the nearest integer
 math.floor(x)	Rounds down to the nearest integer
 
-
+## 10. Random Module
 
 ### What is the Random Module?
 
