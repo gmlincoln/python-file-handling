@@ -143,9 +143,10 @@ print(math.pi)
 print(math.ceil(4.2))
 print(math.floor(4.9))
 ```
-```
-```
-Output
+
+
+#### Output
+```python
 5.0
 3.141592653589793
 5
