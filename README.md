@@ -117,19 +117,7 @@ with open("students.csv", "r") as csv_file:
         print(r)
 
 ```
-# Error Handling in Python (File Reading)
 
-## 📌 Overview
-This project demonstrates how to handle errors while reading a file in Python using `try`, `except`, and `finally` blocks.  
-It safely attempts to read a file and prevents the program from crashing if something goes wrong.
-
----
-
-## 🧠 Purpose of Error Handling
-Error handling is used to:
-- Prevent runtime crashes
-- Handle missing or inaccessible files
-- Ensure important messages or cleanup code always runs
 
 ---
 
@@ -169,7 +157,21 @@ math.sqrt(x)	Returns the square root of x
 math.pi	Returns the value of π
 math.ceil(x)	Rounds up to the nearest integer
 math.floor(x)	Rounds down to the nearest integer
+```
 
+# Error Handling in Python (File Reading)
+
+## 📌 Overview
+This project demonstrates how to handle errors while reading a file in Python using `try`, `except`, and `finally` blocks.  
+It safely attempts to read a file and prevents the program from crashing if something goes wrong.
+
+---
+
+## 🧠 Purpose of Error Handling
+Error handling is used to:
+- Prevent runtime crashes
+- Handle missing or inaccessible files
+- Ensure important messages or cleanup code always runs
 
 ## 🧾 Code Explanation
 
