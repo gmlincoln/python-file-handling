@@ -202,6 +202,125 @@ random.random()	Returns a random decimal number between 0 and 1
 random.choice(list)	Returns a random item from a list
 ```
 
+## 11. JSON Module
+#### What is JSON?
+
+##### JSON stands for:
+- JavaScript Object Notation
+- JSON is a lightweight format used to exchange data between applications.
+
+##### Example JSON:
+
+```python
+
+{
+    "name": "Lincoln",
+    "age": 25,
+    "city": "Dhaka"
+}
+```
+#### Python Dictionary to JSON
+##### Example
+```pyton
+
+ import json
+
+student = {
+    "name": "Lincoln",
+    "age": 25,
+    "city": "Dhaka"
+}
+
+json_data = json.dumps(student)
+
+print(json_data)
+``` 
+
+#### Explanation
+
+> json.dumps() converts a Python dictionary into a JSON string.
+
+> JSON to Python Dictionary
+##### Example
+```python 
+
+import json
+
+json_text = '{"name":"Lincoln","age":25}'
+
+data = json.loads(json_text)
+
+print(data["name"])
+Explanation
+
+json.loads() converts a JSON string into a Python dictionary.
+```
+
+## 12.Datetime Module
+#### What is the Datetime Module?
+
+The datetime module is used to work with:
+
+- Current date  
+- Current time  
+- Date calculations  
+- Formatting dates and times  
+- Current Date and Time  
+
+```python
+import datetime
+
+now = datetime.datetime.now()
+
+print(now)
+```
+```cmd 
+Output
+2026-06-21 10:30:45.123456
+```
+
+Explanation
+
+datetime.now() returns the current date and time of the system.
+
+Current Date
+```python
+import datetime
+
+today = datetime.date.today()
+
+print(today)`
+```
+
+Output
+
+```cmd
+2026-06-21
+```
+
+Current Time
+```python
+import datetime
+
+current_time = datetime.datetime.now().time()
+
+print(current_time)
+Formatting Date and Time
+import datetime
+
+now = datetime.datetime.now()
+
+print(now.strftime("%d-%m-%Y"))
+print(now.strftime("%H:%M:%S"))
+print(now.strftime("%I:%M %p"))
+```
+Output
+```cmd
+21-06-2026
+10:30:45
+10:30 AM
+
+```
 # Error Handling in Python (File Reading)
 
 ## 📌 Overview
