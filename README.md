@@ -142,6 +142,9 @@ print(math.sqrt(25))
 print(math.pi)
 print(math.ceil(4.2))
 print(math.floor(4.9))
+
+
+
 ```
 
 
@@ -158,6 +161,45 @@ math.sqrt(x)	Returns the square root of x
 math.pi	Returns the value of π
 math.ceil(x)	Rounds up to the nearest integer
 math.floor(x)	Rounds down to the nearest integer
+
+
+
+### What is the Random Module?
+
+- The random module is used to generate random values.
+
+#### It is commonly used in:
+
+```linux
+Games
+Simulations
+Password generators
+Lottery systems
+Example
+import random
+```
+```python
+
+print(random.randint(1, 10))
+print(random.random())
+
+colors = ["Red", "Green", "Blue"]
+print(random.choice(colors))
+
+```
+#### Possible Output
+```python
+7
+0.4523
+Green
+```
+
+### Explanation
+``` 
+Function	Description
+random.randint(a,b)	Returns a random integer between a and b
+random.random()	Returns a random decimal number between 0 and 1
+random.choice(list)	Returns a random item from a list
 ```
 
 # Error Handling in Python (File Reading)
