@@ -156,11 +156,18 @@ print(math.floor(4.9))
 4
 ```
 ####  Explanation
-Function	Description
-math.sqrt(x)	Returns the square root of x
-math.pi	Returns the value of π
-math.ceil(x)	Rounds up to the nearest integer
-math.floor(x)	Rounds down to the nearest integer
+## Math Module Functions
+
+| Function            | Description                            |
+| ------------------- | -------------------------------------- |
+| `math.sqrt(x)`      | Returns the square root of `x`         |
+| `math.pi`           | Returns the value of π (Pi)            |
+| `math.ceil(x)`      | Rounds `x` up to the nearest integer   |
+| `math.floor(x)`     | Rounds `x` down to the nearest integer |
+| `math.pow(x, y)`    | Returns `x` raised to the power `y`    |
+| `math.factorial(x)` | Returns the factorial of `x`           |
+
+
 
 ## 10. Random Module
 
@@ -169,15 +176,13 @@ math.floor(x)	Rounds down to the nearest integer
 - The random module is used to generate random values.
 
 #### It is commonly used in:
+- Games
+- Simulations
+- Password generators
+- Lottery systems
+- Example
+- import random
 
-```linux
-Games
-Simulations
-Password generators
-Lottery systems
-Example
-import random
-```
 ```python
 
 print(random.randint(1, 10))
@@ -188,19 +193,24 @@ print(random.choice(colors))
 
 ```
 #### Possible Output
-```python
+```cmd
 7
 0.4523
 Green
 ```
 
 ### Explanation
-``` 
-Function	Description
-random.randint(a,b)	Returns a random integer between a and b
-random.random()	Returns a random decimal number between 0 and 1
-random.choice(list)	Returns a random item from a list
-```
+## Random Module Functions
+
+| Function               | Description                                                |
+| ---------------------- | ---------------------------------------------------------- |
+| `random.randint(a, b)` | Returns a random integer between `a` and `b` (inclusive)   |
+| `random.random()`      | Returns a random decimal number between `0.0` and `1.0`    |
+| `random.choice(list)`  | Returns a random item from a list                          |
+| `random.shuffle(list)` | Randomly shuffles the elements of a list                   |
+| `random.uniform(a, b)` | Returns a random floating-point number between `a` and `b` |
+
+
 
 ## 11. JSON Module
 #### What is JSON?
@@ -321,6 +331,47 @@ Output
 10:30 AM
 
 ```
+## Common Format Codes
+
+| Code | Meaning                |
+| ---- | ---------------------- |
+| `%d` | Day (01-31)            |
+| `%m` | Month (01-12)          |
+| `%Y` | Four-digit Year (2026) |
+| `%y` | Two-digit Year (26)    |
+| `%H` | Hour (24-hour format)  |
+| `%I` | Hour (12-hour format)  |
+| `%M` | Minute                 |
+| `%S` | Second                 |
+| `%p` | AM / PM                |
+| `%A` | Full weekday name      |
+| `%a` | Short weekday name     |
+| `%B` | Full month name        |
+| `%b` | Short month name       |
+
+### Example
+
+```python
+import datetime
+
+now = datetime.datetime.now()
+
+print(now.strftime("%d-%m-%Y"))
+print(now.strftime("%I:%M:%S %p"))
+print(now.strftime("%A"))
+print(now.strftime("%B"))
+```
+
+### Output
+
+```cmd
+21-06-2026
+10:30:45 AM
+Sunday
+June
+```
+
+
 # Error Handling in Python (File Reading)
 
 ## 📌 Overview
