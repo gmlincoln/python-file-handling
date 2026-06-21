@@ -261,10 +261,13 @@ json_text = '{"name":"Lincoln","age":25}'
 data = json.loads(json_text)
 
 print(data["name"])
-Explanation
 
-json.loads() converts a JSON string into a Python dictionary.
 ```
+
+##### Explanation
+
+> json.loads() converts a JSON string into a Python dictionary.
+
 
 ## 12.Datetime Module
 #### What is the Datetime Module?
